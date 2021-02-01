@@ -1,0 +1,66 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: grey;
+}
+
+.calc {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-grid-columns: (80px)[4];
+      grid-template-columns: repeat(4, 80px);
+  -ms-grid-rows: (80px)[4];
+      grid-template-rows: repeat(4, 80px);
+}
+
+.output {
+  grid-column: 1 / -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: honeydew;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.getResult, .dot {
+  grid-column: 1 / -1;
+}
+
+.getResult {
+  height: 50px;
+}
+
+.previous-operand {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 8px;
+}
+
+.current-operand {
+  font-size: 1.2rem;
+}
+
+button {
+  cursor: pointer;
+}
+/*# sourceMappingURL=styles.css.map */
